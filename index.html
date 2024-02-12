@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+<body>
+    <main class="container">
+        <section class="crud">
+            <h1 class="crud_title">Employee CRUD</h1>
+            <div class="form_container">
+                <form id="formRegister" class="crud_form">
+                    <div class="form_group">
+                        <label for="identificationInput">Identification Number:</label>
+                        <input type="text" id="identificationInput" class="form_input" placeholder="Enter identification number">
+                    </div>
+                    <div class="form_group">
+                        <label for="nameInput">Full Name:</label>
+                        <input type="text" id="nameInput" class="form_input" placeholder="Enter full name">
+                    </div>
+                    <div class="form_group">
+                        <label for="photoInput">Photo:</label>
+                        <input type="file" id="photoInput" accept="image/*" class="form_input">
+                    </div>
+                    <div class="form_group">
+                        <label for="hireDateInput">Hire Date:</label>
+                        <input type="date" id="hireDateInput" class="form_input">
+                    </div>
+                    <div class="form_group">
+                        <label for="positionIdInput">PositionId:</label>
+                        <input type="text" id="positionIdInput" class="form_input" placeholder="Enter position ID">
+                    </div>
+                    <div class="form_group">
+                        <button type="submit" id="submitButton" class="button button--primary">Add</button>
+                    </div>
+                </form> 
+            </div>
+            <table class="crud_table">
+                <thead>
+                    <tr>
+                        <th class="table_header">Id </th>
+                        <th class="table_header">Identification Number</th>
+                        <th class="table_header">Full Name</th>
+                        <th class="table_header">Photo</th>
+                        <th class="table_header">Hire Date</th>
+                        <th class="table_header">PositionId</th>
+                        <th class="table_header">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table_body">
+                    <!-- Employee data will be dynamically generated here -->
+                </tbody>
+            </table>
+
+            
+        </section>
+        
+    </main>
+    <script src="app.js"></script>
+    <footer class="footer"> 
+        <div class="footer-content">
+          <h2>Carlos David Sabogal Motta</h2>
+          <h5>Backend Developer</h5>
+        </div>
+        <div class="social-networks">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin" onclick="window.location.href='https://www.linkedin.com/in/carlos-david-sabogal-motta-3497431a4/'"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+    </footer>
+</body>
+</html>

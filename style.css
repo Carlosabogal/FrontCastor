@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:480,508,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, button, input {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #3498db; 
+}
+.form_group {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.crud_title {
+    text-align: center;
+}
+
+.crud form {
+    display: flex;
+    margin: 10px 0;
+}
+.form_container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 1.5em; /* Espacio de 1.5 entre el cuadro y los elementos siguientes */
+}
+
+.crud_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+}
+.form_input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 18px;
+    font-size: 1rem;
+}
+
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all 0.36s;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.button--primary {
+    background-color: #049c10 ;
+    color: #fff;
+}
+.button--secondary {
+    background-color: #ffc107;
+    color: #fff/* Specify text color */;
+}
+
+.button--tertiary {
+    background-color: #dc3545;
+    color: #fff;
+}
+.crud_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_header,
+.table_body td{
+    border: 1px solid;
+    padding: 8px;
+}
+
+.table_header {
+    background-color: #f0f0f0;
+}
+
+
+
+.table_body td:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    padding: 2em;
+    background-color: #392eb5;
+  }
+  
+  .footer-content h2 {
+    font-size: 3em;
+  }
+  
+  .footer-content h5 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .sotial-networks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+  }
+  
+  .sotial-networks i {
+    font-size: 1.5em;
+  }
+  
+  .portfolio,
+  .contact-section {
+    width: 100vw;
+    background-color: #1b386e;
+    color: #fff;
+  }
+  
